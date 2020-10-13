@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/datatables.min.js"></script>
+		<script src="js/main.js"></script> 
+        <title>Country Explorer</title>
+    </head>
+	
+    <body>
+		<header>
+			<h2>Country Explorer</h2>
+		</header>
+        <section>
+			<nav>
+			</nav>
+			<article class="ml-2">
+				<form method="post">
+					Wyszukuj po: <br>
+					<label class="ml-2" ><input type="checkbox" name="byName" checked>Nazwa kraju</label> <br />
+					<label class="ml-2"><input type="checkbox" name="byISO" checked>Kod ISO kraju</label> <br />
+					<label class="ml-2"><input type="checkbox" name="byLang" checked>Język kraju</label> <br />
+					<input type="text" name="phrase" /> <br />
+					<input type="submit" value="Szukaj"/>
+				</form>
+				<div id="results">
+				</div>
+			</article>
+		</section>
+        <footer class="ml-2">
+			<p>Adrian Witkowski</p>
+		</footer>
+    </body>
+</html>
